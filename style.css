@@ -1,0 +1,412 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Signika", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Menu */
+.navi {
+  z-index: 1;
+  background: #181733;
+  margin: 0px 8px 0px 8px;
+  padding-top: 15px;
+  list-style: none;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#logo {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin: -10px 70px 5px 0;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.navi li a {
+  border: 2px solid rgb(253, 197, 44);
+  border-radius: 8px;
+  background: rgb(162, 11, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(162, 11, 2, 1) 0%,
+    rgba(122, 0, 0, 1) 0%,
+    rgba(0, 2, 122, 1) 100%
+  );
+  text-decoration: none;
+  transition: all 650ms ease;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin: 40px;
+  align-items: center;
+}
+
+.navi li a:hover {
+  background: rgb(122, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(122, 0, 0, 1) 0%,
+    rgba(254, 18, 4, 1) 100%
+  );
+  color: white;
+}
+
+/* Header */
+.wrapper {
+  width: 400px;
+  margin: 20px;
+  border: 4px solid #eb1c4900;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.target {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(253, 197, 44);
+  animation-name: leftToright;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: inherit;
+}
+
+@keyframes leftToright {
+  0% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(-400px);
+  }
+}
+.schtrich-wort {
+  height: 100vh;
+  background-image: url("./images/FC-Barcelona-Camp-Nou.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.schtrich-wort h1 {
+  font-size: 70px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.schtrich-wort p a {
+  color: #fdc52c;
+  font-weight: bold;
+  font-size: 35px;
+  text-decoration: none;
+  margin: 50px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.schtrich-wort p a:hover {
+  color: #a40344;
+}
+
+/* Achievments-Page */
+.achievements {
+  background: rgb(78, 44, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(78, 44, 253, 0.630987429151348) 0%,
+    rgba(254, 4, 4, 1) 100%
+  );
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.achievements h2 {
+  color: rgb(253, 197, 44);
+  text-shadow: 2px 2px #ff0000;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10 10 0 10;
+  margin: 40px 20px 10px 20px;
+}
+
+.achievements-Box {
+  min-height: 50%;
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 2px solid rgb(255, 250, 250);
+  border-radius: 8px;
+  box-shadow: 5px 0px 36px 8px rgba(0, 0, 0, 0.96);
+  width: 500px;
+  height: 250px;
+  margin: 20px;
+}
+
+.img-package {
+  border-radius: 6px 6px 0 0;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.info {
+  background-color: #591823;
+  height: 50%;
+}
+
+.info h3,
+p {
+  font-size: 18px;
+  color: #fdc52c;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+
+.img-laliga {
+  background-image: url("./images/Laliga.png");
+}
+.img-copa-del-ray {
+  background-image: url("./images/copa\ del\ ray\ .png");
+}
+.img-champions-league {
+  background-image: url("./images/champions\ leage.png");
+}
+.img-world-cup {
+  background-image: url("./images/world-cub.png");
+}
+
+/* Stories-Page */
+.stories {
+  background: rgb(22, 61, 123);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 61, 123, 1) 0%,
+    rgba(24, 26, 56, 1) 92%
+  );
+  min-height: 100vh;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stories h2 {
+  color: rgb(253, 197, 44);
+  text-shadow: 2px 2px #ff0000;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10 10 0 10;
+  margin: 40px 20px 10px 20px;
+}
+
+.stories a img {
+  box-shadow: 5px 0px 36px 8px rgba(0, 0, 0, 0.96);
+  width: 150px;
+  height: 250;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.story-beschreibung h3 {
+  color: #fdc52c;
+  font-size: 30px;
+  margin: 50px auto 10px auto;
+  text-align: center;
+}
+
+.story-beschreibung p {
+  margin: 10px;
+}
+
+.story-1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.button {
+  border: 2px solid rgba(255, 255, 255, 0.785);
+  border-radius: 8px;
+  background: rgb(162, 11, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(162, 11, 2, 1) 0%,
+    rgba(122, 0, 0, 1) 0%,
+    rgba(0, 2, 122, 1) 100%
+  );
+  color: white;
+  box-shadow: 5px 0px 36px 8px rgba(0, 0, 0, 0.96);
+
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  transition: all 650ms ease;
+  float: left;
+  margin-left: 50px;
+}
+
+.button:hover {
+  background: rgb(122, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(122, 0, 0, 1) 0%,
+    rgba(254, 18, 4, 1) 100%
+  );
+  color: white;
+}
+
+.button-1 {
+  border: 2px solid rgba(255, 255, 255, 0.785);
+  border-radius: 8px;
+  background: rgb(162, 11, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(162, 11, 2, 1) 0%,
+    rgba(122, 0, 0, 1) 0%,
+    rgba(0, 2, 122, 1) 100%
+  );
+  color: white;
+  box-shadow: 5px 0px 36px 8px rgba(0, 0, 0, 0.96);
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-top: 70px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  transition: all 650ms ease;
+  float: right;
+}
+
+.button-1:hover {
+  background: rgb(122, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(122, 0, 0, 1) 0%,
+    rgba(254, 18, 4, 1) 100%
+  );
+  color: white;
+}
+
+.about {
+  background: rgb(22, 61, 123);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 61, 123, 1) 0%,
+    rgba(200, 1, 1, 1) 50%,
+    rgba(22, 61, 123, 1) 100%,
+    rgba(200, 1, 1, 1) 100%
+  );
+  min-height: 100vh;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* About-Page */
+.about h2 {
+  color: rgb(253, 197, 44);
+  text-shadow: 2px 2px #ff0000;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10 10 0 10;
+  margin: 40px 20px 10px 20px;
+  text-align: left;
+}
+
+.about img {
+  width: 200px;
+  box-shadow: 5px 0px 36px 8px rgba(0, 0, 0, 0.96);
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.about p {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Contact-Page */
+.contact {
+  background: #181733;
+  min-height: 80vh;
+  padding-top: 20px;
+}
+
+.contact h2 {
+  color: rgb(253, 197, 44);
+  text-shadow: 2px 2px #ff0000;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10 10 0 10;
+  margin: 40px 20px 10px 20px;
+}
+
+.contact h3 {
+  color: #fdc52c;
+  font-size: 30px;
+  margin: 50px auto 10px auto;
+  text-align: center;
+}
+
+.social-media {
+  list-style: none;
+  text-decoration: none;
+  transition: all 650ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-brands {
+  font-size: 60px;
+  margin: 20px;
+}
+
+.fa-brands:hover {
+  color: white;
+  opacity: 0.6;
+}
+
+.fa-facebook-f {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #55acee;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+.fa-instagram {
+  color: white;
+}
+.fa-tiktok {
+  color: black;
+}
+
+.tel-email {
+  color: white;
+  font-size: 30px;
+}
+.fa-solid {
+  font-size: 30px;
+  margin: 10px;
+  color: white;
+}
